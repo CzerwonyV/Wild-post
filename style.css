@@ -2,7 +2,27 @@
 /* ------------------------------------------ Partie Header ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 
-/*CSS pour le header ici*/
+.header-titleblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav ul {
+    display: flex;
+    background-color: pink;
+    
+  }
+  
+nav ul li {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+  }
+
+nav ul li a {
+    text-decoration: none;
+}
 
 
 
