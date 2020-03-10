@@ -24,7 +24,18 @@
 
 /* CSS pour les témoignages ici*/
 
+.logoLinkedin, .logoLinkedin:link:active, .logoLinkedin:visited:active{
+    color: #006097;
+}
 
+.post-profils{
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.Nom-temoignages, .Phrase-temoignages{
+    margin-bottom: 1vh;
+}
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* -------------------------------------- Partie Footer -------------------------------------------------*/
