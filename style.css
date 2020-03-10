@@ -6,11 +6,14 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
 }
 
 nav ul {
     display: flex;
-    background-color: pink;
+    background-color: #f99797;
+    margin: 0px;
+    padding: 15px;
     
   }
   
@@ -22,6 +25,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: white;
 }
 
 
