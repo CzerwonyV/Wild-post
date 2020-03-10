@@ -2,7 +2,7 @@
 
 ## Equipe
 
-Angélique, Fabrice 
+Angélique, Fabrice, Victor
 
 ## Projet
 Du 09/03/2020 au 27/03/2020)
