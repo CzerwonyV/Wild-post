@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-    
 }
 
 nav ul {
@@ -14,14 +13,14 @@ nav ul {
   background-color: #f99797;
   margin: 0px;
   padding: 15px;
-    
-  }
+  font-family: 'Playfair Display', serif;
+}
   
 nav ul li {
   display: flex;
   flex: auto;
   justify-content: center;
-  }
+}
 
 nav ul li a {
   text-decoration: none;
