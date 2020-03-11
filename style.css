@@ -56,35 +56,18 @@ nav ul li a {
 /* ---------------------------------- Partie Section-Article --------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 
-
-.imgIntegr{
-    float: left;
-    width: 30%;    
-}
-
-summary{
-    width: 60%;
-    outline:none;
-    text-align: justify; 
-}
 .paragraphe{
     width: 60%;
     text-align: justify;
 }
 
 img {
-    vertical-align:top;
+    vertical-align: top;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
   }
-
-.bouton {
-    float: left;
-}     
-
-
 
 
 /* ------------------------------------------------------------------------------------------------------*/
