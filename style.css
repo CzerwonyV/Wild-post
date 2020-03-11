@@ -31,8 +31,33 @@ nav ul li a {
 /* ------------------------------------------------------------------------------------------------------*/
 
 
+.imgIntegr{
+    float: left;
+    width: 30%;    
+}
+summary{
+    width: 60%;
+    outline:none;
+    text-align: justify; 
+    
 
-/*CSS pour les Articles ici*/
+}
+p{
+    width: 60%;
+    text-align: justify;
+    
+}
+img {
+    vertical-align:top;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+.bouton {
+    float: left;
+   
+    
+}     
+
 
 
 
