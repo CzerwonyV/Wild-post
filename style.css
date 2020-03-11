@@ -67,8 +67,7 @@ summary{
     outline:none;
     text-align: justify; 
 }
-
-p{
+.paragraphe{
     width: 60%;
     text-align: justify;
 }
