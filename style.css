@@ -2,6 +2,9 @@
 /* ------------------------------------------ Partie Middle ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 
+body{
+    margin: 0;
+}
 .Container-All{
     display: flex;
     flex-direction: row;
@@ -13,12 +16,10 @@
 
 .Section-temoignages{
     width: 20%;
-    padding: 2vh;
-}
-
-#hr{
-    display: flex;
-    flex-direction: column;
+    padding: 1vh;
+    border-left: 2px solid black;
+    border-radius: 1px;
+    margin-top: 1vh;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
@@ -73,6 +74,7 @@ summary{
     text-align: justify;
     
 }
+
 img {
     vertical-align:top;
     margin-right: 0.5rem;
@@ -80,8 +82,6 @@ img {
   }
 .bouton {
     float: left;
-   
-    
 }     
 
 
@@ -94,6 +94,10 @@ img {
 
 
 /* CSS pour les témoignages ici*/
+.h2-temoignage{
+    text-align: center;
+    margin-top: 0;
+}
 
 .logoLinkedin, .logoLinkedin:link:active, .logoLinkedin:visited:active{
     color: #006097;
@@ -108,11 +112,50 @@ img {
     margin-bottom: 1vh;
 }
 
+.Container-Case-Temoignage{
+    border-bottom: 2px solid black;
+}
+
+.Phrase-temoignages{
+    margin-bottom: 2vh;
+}
+
 /* ------------------------------------------------------------------------------------------------------*/
 /* -------------------------------------- Partie Footer -------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 
+.container-footer{
+    background-color: #FFE8E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-left: none;
+    margin-top: 1vh;
+}
 
+#Logo-Wild{
+    width: 15vh;
+    height: 15vh;
+}
 
+.Liens-Externe{
+    display: flex;
+    flex-direction: column;
+}
 
+.link-footer{
+    margin-bottom: 1vh;
+    text-decoration: none;
+    color: black;
+}
+
+.Nous-Contacter{
+    display: flex;
+    flex-direction: row;
+}
+
+#h3-Nous-Contacter{
+    margin-bottom: 0vh;
+}
 /* CSS pour le footer ici*/
