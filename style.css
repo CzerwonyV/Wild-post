@@ -1,27 +1,53 @@
 /* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ Partie Middle ---------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+.Container-All{
+    display: flex;
+    flex-direction: row;
+}
+
+.Section-Article{
+    width: 80%;
+}
+
+.Section-temoignages{
+    width: 20%;
+    padding: 2vh;
+}
+
+#hr{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ Partie Header ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 
 .header-titleblock {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 nav ul {
-    display: flex;
-    background-color: pink;
-    
-  }
+  display: flex;
+  background-color: #f99797;
+  margin: 0px;
+  padding: 15px;
+  font-family: 'Playfair Display', serif;
+}
   
 nav ul li {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-  }
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
 
 nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
 }
 
 
