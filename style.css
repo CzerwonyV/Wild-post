@@ -109,7 +109,7 @@ img {
 
 .post-profils{
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .Nom-temoignages, .Phrase-temoignages{
@@ -122,6 +122,7 @@ img {
 
 .Phrase-temoignages{
     margin-bottom: 2vh;
+    font-size: 0.8rem;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
