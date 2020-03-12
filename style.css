@@ -62,9 +62,18 @@ nav {
   
 }
 
-header h1 {
-  font-size: 50px;
+.site-title {
+  font-size: 4rem;
+  font-family: "Chomsky", serif;
 }
+
+@font-face {
+    font-family: "Chomsky";
+    src: url("fonts/Chomsky.otf") format("otf"),
+         url("fonts/Chomsky.woff") format("woff");
+}
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------*/
