@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  
+
   <title>Wild-post</title>
 </head>
 <body>
@@ -27,6 +30,60 @@
       <li><a class="navigation-link" href=""><i class="fas fa-bell"></i></a></li>
     </ul>
   </nav>
+
+  <!-- Partie Carousel Témoignages / Start -->
+
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left is-hidden">
+
+    </button>
+    <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+
+            <h4 class="Nom-temoignages">Clément Bechetoille <a href="https://www.linkedin.com/in/clementbechetoille/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+            <p class="post-profils">Campus Manager</p>
+            <p class="Phrase-temoignages">La Wild Code School est une école innovante qui forme aux nouveaux métiers tech. La plupart des élèves sont en reconversion avec des expériences riches dans de nombreux domaines d'activité, cela crée une belle dynamique de groupe ! L'approche pédagogique notamment par la réalisation de projets permet d'entrer très vite dans le concret et favorise l'apprentissage.</p>
+
+          </li>
+          <li class="carousel__slide">
+
+            <h4 class="Nom-temoignages">Romain Guillemot  <a href="https://www.linkedin.com/in/rguillemot/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+            <p class="post-profils">Formateur</p>
+            <p class="Phrase-temoignages">Retour à la case départ... C'est mon destin à chaque session. Tous les 6 mois, quitter des personnes que je commençais seulement à connaître. Tous les 6 mois, faire connaissance avec un nouveau groupe, et tout recommencer. Vais-je répéter mes erreurs ? mes réussites ? La vie de formateur est pleine de questions. J'ai hâte de savoir quelles réponses vous m'apprendrez.</p>
+
+          </li>
+          <li class="carousel__slide">
+
+            <h4 class="Nom-temoignages">Malik Himeur <a href="https://www.linkedin.com/in/malik-himeur-27452b1a3/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+            <p class="post-profils">Nouveau Wilder</p>
+            <p class="Phrase-temoignages">Beaucoup de nouveautés, autant dans les quêtes que dans les cours grâce à la méthode inversée et une méthode d'apprentissage intuitive. C'est ce qui me plaît ici !</p>
+                
+          </li>
+          <li class="carousel__slide">
+
+            <h4 class="Nom-temoignages">Nico Huraux <a href="https://www.linkedin.com/in/nicolas-huraux" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+            <p class="post-profils">Ancien Wilder</p>
+            <p class="Phrase-temoignages">J’ai apprécié la méthode d’apprentissage, de faire les quêtes le matin, de tenter de se débrouiller seul ou avec les autres élevés, pour comprendre les exercices et d’avancer dessus. Une qu’une fois que l’on a passé qq heures dessus, le cours arrive et là il y a 2 possibilités soit la lumière s’allume et tu comprends tout et tu as qu’une envie c’est de terminer tes quêtes, soit Romain rentre dans des explications si profondes que tu es encore plus perdu qu’avant.
+              C’est là que tu es content d’avoir des collègues qui eux ont tout compris… Le seul truc que je n’ai pas accroché ce sont les exos de fin de cours.
+              Bon courage les Wilders !</p>
+
+          </li>
+        </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+
+    </button>
+
+    <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+    </div>
+  </div>
+
+  <!-- Partie Carousel Témoignages / End -->
 
   <div class="Container-All">
     
@@ -80,36 +137,30 @@
       </article>    
     </section>
 
+    
+
+      </div>
+    </div>
+    <div id="test">
       <section id="temoignages-section" class="Section-temoignages">
 
       <h2 class="h2-temoignage">Témoignages</h2>
-
-      <article class="Container-Case-Temoignage">
-        <h4 class="Nom-temoignages">Clément Bechetoille <a href="https://www.linkedin.com/in/clementbechetoille/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
-        <p class="post-profils">Campus Manager</p>
-        <p class="Phrase-temoignages">La Wild Code School est une école innovante qui forme aux nouveaux métiers tech. La plupart des élèves sont en reconversion avec des expériences riches dans de nombreux domaines d'activité, cela crée une belle dynamique de groupe ! L'approche pédagogique notamment par la réalisation de projets permet d'entrer très vite dans le concret et favorise l'apprentissage.</p>
-      </article>
-
-      <article class="Container-Case-Temoignage">
-        <h4 class="Nom-temoignages">Romain Guillemot  <a href="https://www.linkedin.com/in/rguillemot/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
-        <p class="post-profils">Formateur</p>
-        <p class="Phrase-temoignages">Retour à la case départ... C'est mon destin à chaque session. Tous les 6 mois, quitter des personnes que je commençais seulement à connaître. Tous les 6 mois, faire connaissance avec un nouveau groupe, et tout recommencer. Vais-je répéter mes erreurs ? mes réussites ? La vie de formateur est pleine de questions. J'ai hâte de savoir quelles réponses vous m'apprendrez.</p>
-      </article>
       
-      <article class="Container-Case-Temoignage">
-        <h4 class="Nom-temoignages">Malik Himeur <a href="https://www.linkedin.com/in/malik-himeur-27452b1a3/" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
-        <p class="post-profils">Nouveau Wilder</p>
-        <p class="Phrase-temoignages">Beaucoup de nouveautés, autant dans les quêtes que dans les cours grâce à la méthode inversée et une méthode d'apprentissage intuitive. C'est ce qui me plaît ici !</p>
-      </article>
+      <div class="Container-Case-Temoignage">
+        
 
-      <article>
-        <h4 class="Nom-temoignages">Nico Huraux <a href="https://www.linkedin.com/in/nicolas-huraux" class="logoLinkedin" target="_blank"><i class="fab fa-linkedin"></i></a></h4>
-        <p class="post-profils">Ancien Wilder</p>
-        <p class="Phrase-temoignages">J’ai apprécié la méthode d’apprentissage, de faire les quêtes le matin, de tenter de se débrouiller seul ou avec les autres élevés, pour comprendre les exercices et d’avancer dessus. Une qu’une fois que l’on a passé qq heures dessus, le cours arrive et là il y a 2 possibilités soit la lumière s’allume et tu comprends tout et tu as qu’une envie c’est de terminer tes quêtes, soit Romain rentre dans des explications si profondes que tu es encore plus perdu qu’avant.
-          C’est là que tu es content d’avoir des collègues qui eux ont tout compris… Le seul truc que je n’ai pas accroché ce sont les exos de fin de cours.
-          Bon courage les Wilders !</p>
-      </article>
+      <div class="Container-Case-Temoignage">
+        
+      
+      <div class="Container-Case-Temoignage">
+        
+
+      <div>
+        
+      </div>
+    
     </section>
+    </div>
     
   </div>
 
@@ -137,5 +188,7 @@
     <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><img src="https://avatars2.githubusercontent.com/u/8874047?s=280&v=4" alt="Logo-Wild" id="Logo-Wild"></a>
   </footer>
 
-</body>
+  <script src="js/carousel.js"></script>
+
+  </body>
 </html>
