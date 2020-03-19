@@ -103,12 +103,31 @@ article:not(:first-of-type) .title-Middle {
     font-size: 1.3rem;
     font-family: 'Crimson Text', serif;
 }
- .summary-Text{
-    list-style: none;
-    text-decoration: underline;
-    color: #A0A0A0;
-    outline: none;
- }
+
+.summary-Text{
+  list-style: none;
+  text-decoration: underline;
+  color: #A0A0A0;
+  outline: none;
+  background-color: #F76C6C;
+  color: white;
+  height: 40px;
+  width: 22%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-left: 70%;
+  margin-bottom: 4%;
+  text-align: center;
+  position: relative;
+}
+
+.summary-Text:hover{
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #F76C6C;
+  color: #F76C6C;
+}
 
  .summary-Text:hover{
     cursor: pointer;
