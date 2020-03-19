@@ -81,7 +81,7 @@ nav {
 /* ---------------------------------- Partie Section-Article --------------------------------------------*/
 .img-all{
     box-sizing: border-box;
-    max-width: 50%;
+    max-width: 100%;
     text-align: center;
     float: left;
     margin-right: 1rem;
@@ -114,8 +114,10 @@ article:not(:first-of-type) .title-Middle {
     cursor: pointer;
  }
 
-.Suite-Text{
+ .articleCadre {
+  border: 1px solid black;
 }
+
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Temoignages ----------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
