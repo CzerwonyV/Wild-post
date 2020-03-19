@@ -89,7 +89,7 @@ nav {
 }
 /* ------------------------------------------------------------------------------------------------------*/
 .title-Middle{
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem;
@@ -102,11 +102,12 @@ article:not(:first-of-type) .title-Middle {
 .Texte-middle{
     font-size: 1.3rem;
     font-family: 'Crimson Text', serif;
+    text-align: justify;
+    padding: 10px;
 }
 
 .summary-Text{
   list-style: none;
-  text-decoration: underline;
   color: #A0A0A0;
   outline: none;
   background-color: #F76C6C;
@@ -129,9 +130,9 @@ article:not(:first-of-type) .title-Middle {
   color: #F76C6C;
 }
 
- .summary-Text:hover{
-    cursor: pointer;
- }
+details > summary::-webkit-details-marker {
+  display: none;
+}
 
  .articleCadre {
   border: 1px solid black;
