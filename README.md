@@ -3,10 +3,14 @@
 ## Equipe
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Angélique, Fabrice
 =======
 Angélique, Fabrice, Victor, Anthony
 >>>>>>> dev_branch
+=======
+Angélique, Fabrice, Victor, Anthony
+>>>>>>> a4e777f66bd621f0696c306af65a0ae9c8dcfa35
 
 ## Projet
 Du 09/03/2020 au 27/03/2020)
