@@ -100,17 +100,19 @@ article:not(:first-of-type) .title-Middle {
   border-top: 1px solid lightgray;
 }
 
-.Texte-middle{
+.articleCadre {
+  border: 1px solid black;
+}
+
+.read-more-wrap{
     font-size: 1.3rem;
     font-family: 'Crimson Text', serif;
     text-align: justify;
     padding: 10px;
 }
 
-.summary-Text{
-  list-style: none;
-  color: #A0A0A0;
-  outline: none;
+.read-more-trigger{
+  display: inline-block;
   background-color: #F76C6C;
   color: white;
   height: 40px;
@@ -119,25 +121,47 @@ article:not(:first-of-type) .title-Middle {
   font-size: 1.5rem;
   padding: 5px;
   margin-left: 70%;
-  margin-bottom: 4%;
+  margin-bottom: 30px;
   text-align: center;
   position: relative;
 }
 
-.summary-Text:hover{
+.read-more-trigger:hover{
   cursor: pointer;
   background-color: white;
   border: 1px solid #F76C6C;
   color: #F76C6C;
 }
 
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
  .articleCadre {
   border: 1px solid black;
 }
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Lire la suite';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Réduire';
+}
+
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Temoignages ----------------------------------------*/
@@ -185,9 +209,6 @@ details > summary::-webkit-details-marker {
     color: white;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 #Logo-Wild{
@@ -197,15 +218,12 @@ details > summary::-webkit-details-marker {
 }
  
 .Liens-Externe {
-  display: flex;
-  flex-direction: column;
+
 }
 
 .link-footer{
     text-decoration: none;
     color: white;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 5px;
     margin-left: 10%;
 }
@@ -216,8 +234,6 @@ details > summary::-webkit-details-marker {
 }
 
 .Nous-Contacter{
-    display: flex;
-    flex-direction: column;
     margin-left: 10%;
 }
 
