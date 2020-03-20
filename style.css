@@ -3,6 +3,8 @@
   src: url("fonts/Chomsky.otf") format("otf"),
        url("fonts/Chomsky.woff") format("woff");
 }
+
+
 /* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ Partie Middle ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
@@ -13,11 +15,6 @@ body, p, ul, h1, h2, h3, h4 {
 }
 body {
   margin-top: 1rem;
-}
-.Container-All{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
 }
 
 .Section-Middle {
@@ -64,13 +61,7 @@ article {
   color: black;
 }
 
-nav {
-  border-top: 1px groove;
-  border-bottom: solid 2px;
-  position: sticky;
-  top: 0px;
-  background-color: white;
-}
+
 
 .site-title {
   font-size: 4rem;
@@ -79,14 +70,6 @@ nav {
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Article --------------------------------------------*/
-.img-all{
-    box-sizing: border-box;
-    max-width: 50%;
-    text-align: center;
-    float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
 /* ------------------------------------------------------------------------------------------------------*/
 .title-Middle{
     text-align: center;
@@ -114,8 +97,6 @@ article:not(:first-of-type) .title-Middle {
     cursor: pointer;
  }
 
-.Suite-Text{
-}
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Temoignages ----------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
@@ -144,31 +125,17 @@ article:not(:first-of-type) .title-Middle {
   margin-bottom: 1rem;
 }
 
-.Container-Case-Temoignage{
-}
-
 .Phrase-temoignages{
     font-size: 0.9rem;
+}
+
+.Section-temoignages{
+    columns: 1;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* -------------------------------------- Partie Footer -------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
-
-.container-footer{
-    background-color: #FFE8E8;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-right: none;
-    border-left: none;
-    padding: 1rem;
-}
-
-#Logo-Wild{
-    width: 15vh;
-    height: 15vh;
-}
 
 .link-footer{
     text-decoration: none;
@@ -191,4 +158,127 @@ article:not(:first-of-type) .title-Middle {
 
 .space-stack {
   margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ Media queries ---------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 375px) {
+  body {
+      background-color: blue;
+  }
+
+  .img-all{
+    max-width: 100%;
+}
+
+.container-footer{
+  background-color: #FFE8E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: none;
+  border-left: none;
+  padding: 1rem;
+}
+
+.Nom-temoignages ,.post-profils, p{
+  text-align: center;
+}
+
+#Logo-Wild{
+  width: 25vh;
+  height: auto;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  body {
+      background-color: red;
+  }
+
+  nav {
+    border-top: 1px groove;
+    border-bottom: solid 2px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+  }  
+
+  .img-all{
+    box-sizing: border-box;
+    max-width: 50%;
+    text-align: center;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+  .Container-All{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.container-footer{
+  background-color: #FFE8E8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-right: none;
+  border-left: none;
+  padding: 1rem;
+}
+
+#Logo-Wild{
+  width: 30vh;
+  height: auto;
+  align-items: baseline;
+}
+}
+
+@media screen and (min-width: 769px) {
+  body {
+      background-color: green;
+  }
+
+  nav {
+  border-top: 1px groove;
+  border-bottom: solid 2px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  }
+
+  .img-all{
+    box-sizing: border-box;
+    max-width: 50%;
+    text-align: center;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+  .Container-All{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.container-footer{
+  background-color: #FFE8E8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-right: none;
+  border-left: none;
+  padding: 1rem;
+}
+#Logo-Wild{
+  width: 30vh;
+  height: auto;
+  align-items: baseline;
+}
 }
