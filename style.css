@@ -147,10 +147,14 @@ article:not(:first-of-type) .title-Middle {
 
 .read-more-state ~ .read-more-trigger:before {
   content: 'Lire la suite';
+  text-align: center;
+  font-size: 0.6rem;
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Réduire';
+  text-align: center;
+  font-size: 0.6rem;
 }
 
 
@@ -208,8 +212,6 @@ article:not(:first-of-type) .title-Middle {
 #Logo-Wild{
     width: 10vw;
     height: auto;
-    margin-right: 10%;
-    float: right;
 }
  
 .Liens-Externe {
@@ -262,19 +264,27 @@ article:not(:first-of-type) .title-Middle {
 
 @media screen and (max-width: 375px) {
  
+nav {
+  border-top: 1px groove;
+  border-bottom: solid 2px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  font-size: 0.8rem;
+}
 
-  .img-all{
-    max-width: 100%;
+.img-all{
+  max-width: 100%;
 }
 
 .container-footer{
-  background-color: #FFE8E8;
+  background-color: #F76C6C;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   border-right: none;
   border-left: none;
-  padding: 1rem;
 }
 
 .Nom-temoignages ,.post-profils, p{
@@ -284,6 +294,15 @@ article:not(:first-of-type) .title-Middle {
 #Logo-Wild{
   width: 25vh;
   height: auto;
+}
+
+.Lien-and-Contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.site-title{
   text-align: center;
 }
 }
@@ -324,9 +343,14 @@ article:not(:first-of-type) .title-Middle {
 }
 
 #Logo-Wild{
-  width: 30vh;
+  width: 20vh;
   height: auto;
-  align-items: baseline;
+}
+
+.Lien-and-Contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 }
 
@@ -369,5 +393,11 @@ article:not(:first-of-type) .title-Middle {
   width: 30vh;
   height: auto;
   align-items: baseline;
+}
+
+.Lien-and-Contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 }
