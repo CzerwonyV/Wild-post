@@ -71,9 +71,10 @@
 }
 
 .block-temoignage {
-    background-color: black;
+    background-color: #f76c6c;
     display: flex;
-    height: 30rem;   
+    height: 30rem;
+    padding-left: 5.2rem;   
 }
 
 .left-temoignage {
@@ -83,7 +84,7 @@
 }
 
 .right-temoignage {
-    background-color: chartreuse;
+    background-color: #f76c6c;
     width: 68%;
     padding-top: 2rem;
 }
