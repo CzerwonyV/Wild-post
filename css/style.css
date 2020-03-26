@@ -533,10 +533,6 @@ nav {
 
 @media screen and (min-width: 769px) {
 
-  .block-temoignage {
-    display: none;
-  }
-  
   .HearderMobile{
     display: none;
   }
