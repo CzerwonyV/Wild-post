@@ -12,7 +12,7 @@
 body, p, ul, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 body {
   margin-top: 1rem;
@@ -237,36 +237,41 @@ nav {
 }
 
 #Logo-Wild{
-    width: 10vw;
+    width: 30vw;
     height: auto;
+    margin-right: 10%;
+    justify-content: top;
 }
  
 .Liens-Externe {
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  justify-content: top;
+}
+.Liens-Externe a {
   text-decoration: none;
   color: white;
   padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  justify-content: center;
 }
+     
 
-.link-footer{
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-}
-
-.link-footer a:hover {
+.Liens-Externe  a:hover {
   text-decoration: underline;
   color: white;
 }
 
+.container-footer h3{
+  font-size: 2rem;
+}
+
+
 .Nous-Contacter{
-    margin-left: 10%;
+    margin-left: 0%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
 }
 
 .Nous-Contacter a {
@@ -281,9 +286,6 @@ nav {
 }
 /* CSS pour le footer ici*/
 
-.space-stack {
-  margin-bottom: 1rem;
-}
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ Media queries ---------------------------------------------*/
@@ -337,10 +339,20 @@ nav {
 .Nom-temoignages ,.post-profils, p{
   text-align: center;
 }
-
+.container-footer h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.container-footer a{
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
 #Logo-Wild{
-  width: 25vh;
+  width: 20vh;
   height: auto;
+  text-align: center;
+  margin-right: 0%;
 }
 
 .Lien-and-Contact{
@@ -351,6 +363,7 @@ nav {
 
 .site-title{
   text-align: center;
+  margin-right: 0%;
 }
 }
 
@@ -394,10 +407,14 @@ nav {
   border-left: none;
   padding: 1rem;
 }
-
+.container-footer h3{
+  font-size: 1.5rem;
+}
 #Logo-Wild{
   width: 20vh;
   height: auto;
+  align-items: baseline;
+  
 }
 
 .Lien-and-Contact{
@@ -458,9 +475,10 @@ nav {
   padding: 1rem;
 }
 #Logo-Wild{
-  width: 30vh;
+  width: 20vh;
   height: auto;
   align-items: baseline;
+ 
 }
 
 .Lien-and-Contact{
@@ -477,4 +495,3 @@ nav {
   display: none;
 }
 
-}
