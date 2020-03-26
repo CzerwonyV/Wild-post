@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="headerDestock">
     <div class="header-titleblock">
       <time datetime="2020-03-20">20 mars 2020</time>
       <h1 class="site-title">The Wild Post</h1>
@@ -21,7 +21,7 @@
     </div>
   </header>
   <nav>
-    <ul class="navigation-ulist">
+    <ul class="navigation-ulist headerDestock">
       <li><a class="navigation-link" href="#homepage"><i class="fas fa-home"></i></a></li>
       <li><a class="navigation-link" href="#integration-section">Intégration</a></li>
       <li><a class="navigation-link" href="#quest-section">Quêtes</a></li>
@@ -30,6 +30,36 @@
       <li><a class="navigation-link" href=""><i class="fas fa-bell"></i></a></li>
     </ul>
   </nav>
+  <section class="HearderMobile">
+    <div class="HearderMobileContent">
+        <div class="main-collapse-out" id="Bars">
+            <button type="button" class="collapsible-out buttonHead">
+                <i class="fas fa-bars Icone"></i>
+            </button>
+            <div class="content-out collapsible">
+                <nav>
+                    <ul class="navigation-ulistMobile">
+                        <li><a class="navigation-link" href="#integration-section">Intégration</a></li>
+                        <li><a class="navigation-link" href="#quest-section">Quêtes</a></li>
+                        <li><a class="navigation-link" href="#lessons-section">Cours</a></li>
+                        <li><a class="navigation-link" href="#temoignages-section">Témoignages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="H1" class="site-title">The Wild Post</h1>
+        </div>
+
+        <div>
+            <p class="headText">1ère Edition</p>
+        </div>
+    </div>
+    <div class="date">
+        <p id="Date">27 mars 2020</p>
+    </div>
+</section>
   <a href="#top" class="scroll-top"><ion-icon name="arrow-up-outline"></ion-icon></a>
 
 
@@ -261,7 +291,7 @@
         <a href="https://odyssey.wildcodeschool.com/?locale=fr" target="blank" >Je candidate</a>
     </div>
 
-    <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><img src="https://user-images.githubusercontent.com/61577605/77089680-6a0ff480-6a06-11ea-8594-0ef8862f5fd1.jpg" alt="Logo-Wild" id="Logo-Wild"></a>
+    <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><img src="https://user-images.githubusercontent.com/57908921/77151531-6a57d080-6a96-11ea-8d48-31cd1a2fe154.png" alt="Logo-Wild" id="Logo-Wild"></a>
   </footer>
 
   <script src="js/carousel.js"></script>
@@ -269,3 +299,36 @@
 
 </body>
 </html>
+
+<script src="app.js"></script>
+<script>
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+              content.style.display = "none";
+          } else {
+              content.style.display = "block";
+          }
+      });
+  }
+  var coll = document.getElementsByClassName("collapsible-out");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+          this.classList.toggle("active-out");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+              content.style.display = "none";
+          } else {
+              content.style.display = "block";
+          }
+      });
+  }
+</script>

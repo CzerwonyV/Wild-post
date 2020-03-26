@@ -286,7 +286,6 @@ nav {
 }
 /* CSS pour le footer ici*/
 
-
 /* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ Media queries ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
@@ -297,13 +296,13 @@ nav {
     display: none;
   }
  
-  nav {
-    border-top: 1px groove;
-    border-bottom: solid 2px;
-    position: sticky;
-    top: 0px;
-    background-color: white;
-    font-size: 0.8rem;
+  li {
+    list-style: none;
+    font-size: 4rem;
+  }
+  
+  .headerDestock {
+    display: none;
   }
 
   .scroll-top {
@@ -373,11 +372,97 @@ nav {
     margin-right: 0%;
   }
 
+.site-title{
+  text-align: center;
+  margin-right: 0%;
+}
+
+.navigation-ulist{
+  border-radius: 5px;
+  background-color: #F76C6C;
+  margin: 0;
+}
+
+.navigation-link{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+}
+
+.HearderMobileContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: solid 2px;
+}
+
+.buttonHead{
+  border: 0;
+  background-color: white;
+}
+
+.Icone{
+  font-size: 1.3rem;
+}
+
+.collapsible{
+  display: none;
+}
+
+.content-out{
+  background-color: #F99797;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation-ulistMobile{
+  padding: 0;
+  padding-left: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-link{
+  margin-bottom: 2vh;
+}
+
+.headText{
+  font-size: 0.8rem;
+}
+
+#Date{
+  text-align: center;
+  margin: 0;
+  border-bottom: solid 2px;
+
+}
+
+.date{
+  background-color: #F99797;
+}
+
+.HearderMobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Chomsky", serif;
+}
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
 
   .block-temoignage {
+    display: none;
+  }
+  
+  .HearderMobile{
     display: none;
   }
 
@@ -451,6 +536,10 @@ nav {
   .block-temoignage {
     display: none;
   }
+  
+  .HearderMobile{
+    display: none;
+  }
 
   nav {
     border-top: 1px groove;
@@ -504,10 +593,6 @@ nav {
   }
 
   #temoignages-section {
-    display: none;
-  }
-
-  .Section-temoignages {
     display: none;
   }
 }
