@@ -12,6 +12,7 @@
 body, p, ul, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 body {
   margin-top: 1rem;
@@ -21,7 +22,15 @@ body {
   box-sizing: border-box;
   min-width: 66%;
   padding: 1rem;
+  margin-top: 40px;
 }
+
+.Section-Middle-World {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 40px;
+}
+
 .Section-temoignages{
     border-left: 1px solid lightgray;
     border-radius: 1px;
@@ -78,17 +87,31 @@ article {
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
+
+.cat {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  align-self: center;
+  border: 1px solid #F54356;
+  border-left: 37px solid #F54356;
+  background-color: rgb(255, 255, 255);
+  color: #F54356;
+  padding: 10px 20px;
+}
+
+.bouton-news {
+  margin-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------------------------------------------------*/
 .title-Middle{
     text-align: left;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem;
-    margin-bottom: 1rem;
     font-family: 'Roboto',sans-serif;
-}
-article:not(:first-of-type) .title-Middle {
-  border-top: 1px solid lightgray;
 }
 
 .articleCadre {
@@ -100,21 +123,20 @@ article:not(:first-of-type) .title-Middle {
     font-family: 'Crimson Text', serif;
     text-align: justify;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .read-more-trigger{
   display: inline-block;
   background-color: #F76C6C;
   color: white;
-  height: 40px;
-  width: 22%;
+  height: auto;
+  max-width: 30%;
   font-weight: bold;
-  font-size: 1.5rem;
-  padding: 5px;
-  margin-left: 70%;
+  padding: 0.5rem;
+  margin-left: 60%;
   margin-bottom: 30px;
   text-align: center;
-  position: relative;
 }
 
 .read-more-trigger:hover{
@@ -122,10 +144,6 @@ article:not(:first-of-type) .title-Middle {
   background-color: white;
   border: 1px solid #F76C6C;
   color: #F76C6C;
-}
-
- .articleCadre {
-  border: 1px solid black;
 }
 
 .read-more-state {
@@ -148,13 +166,13 @@ article:not(:first-of-type) .title-Middle {
 .read-more-state ~ .read-more-trigger:before {
   content: 'Lire la suite';
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 1.3rem;
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Réduire';
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 1.3rem;
 }
 
 
@@ -170,6 +188,7 @@ article:not(:first-of-type) .title-Middle {
     text-transform: uppercase;
     margin-bottom: 2rem;
     column-span: all;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logoLinkedin, .logoLinkedin:link:active, .logoLinkedin:visited:active{
@@ -352,6 +371,15 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+
+#temoignages-section {
+  display: none;
+}
+
+.Section-temoignages {
+  display: none;
+}
+
 }
 
 @media screen and (min-width: 769px) {
@@ -400,4 +428,13 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+
+#temoignages-section {
+  display: none;
+}
+
+.Section-temoignages {
+  display: none;
+}
+
 }
