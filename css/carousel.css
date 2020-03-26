@@ -168,3 +168,140 @@
     text-align: justify;
     font-style: italic;
 }
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    .block-temoignage {
+      display: none;
+    }
+  
+    nav {
+      border-top: 1px groove;
+      border-bottom: solid 2px;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+    }  
+  
+    .scroll-top {
+      display: none;
+    }
+  
+    #bouton-temoignages {
+      display: none;
+    }
+  
+    .img-all {
+      box-sizing: border-box;
+      max-width: 100%;
+      text-align: center;
+      float: left;
+    }
+  
+    .Container-All {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+    }
+  
+    .container-footer {
+      background-color: #F76C6C;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-right: none;
+      border-left: none;
+      padding: 1rem;
+    }
+  
+    .container-footer h3 {
+      font-size: 1.5rem;
+    }
+  
+    #Logo-Wild {
+      width: 20vh;
+      height: auto;
+      align-items: baseline;
+    }
+  
+    .Lien-and-Contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    #temoignages-section {
+      display: none;
+    }
+  
+    .Section-temoignages {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (min-width: 769px) {
+  
+    .block-temoignage {
+      display: none;
+    }
+  
+    nav {
+      border-top: 1px groove;
+      border-bottom: solid 2px;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+    }
+  
+    .scroll-top {
+      display: none;
+    }
+  
+    #bouton-temoignages {
+      display: none;
+    }
+  
+    .img-all {
+      box-sizing: border-box;
+      max-width: 100%;
+      text-align: center;
+      float: left;
+    }
+  
+    .Container-All {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+    }
+  
+    .container-footer {
+      background-color: #F76C6C;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-right: none;
+      border-left: none;
+      padding: 1rem;
+    }
+  
+    #Logo-Wild {
+      width: 20vh;
+      height: auto;
+      align-items: baseline;
+    }
+  
+    .Lien-and-Contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    #temoignages-section {
+      display: none;
+    }
+  
+    .Section-temoignages {
+      display: none;
+    }
+  }
