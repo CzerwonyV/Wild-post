@@ -70,8 +70,6 @@ article {
   color: black;
 }
 
-
-
 .site-title {
   font-size: 4rem;
   font-family: "Chomsky", serif;
@@ -84,8 +82,6 @@ article {
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
 .cat {
@@ -94,14 +90,14 @@ article {
   font-size: 11px;
   font-weight: bold;
   align-self: center;
-  border: 1px solid #F54356;
-  border-left: 37px solid #F54356;
+  border: 1px solid #c83c53;
+  border-left: 37px solid #c83c53;
   background-color: rgb(255, 255, 255);
-  color: #F54356;
+  color: #c83c53;
   padding: 10px 20px;
 }
 
-.bouton-news {
+.bouton, .bouton-temoignages {
   margin-bottom: 2rem;
 }
 
@@ -127,7 +123,7 @@ article {
 }
 
 .read-more-trigger{
-  display: inline-block;
+  display: block;
   background-color: #F76C6C;
   color: white;
   height: auto;
@@ -160,7 +156,6 @@ article {
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
-  max-height: 999em;
 }
 
 .read-more-state ~ .read-more-trigger:before {
@@ -174,7 +169,6 @@ article {
   text-align: center;
   font-size: 1.3rem;
 }
-
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Temoignages ----------------------------------------*/
@@ -197,7 +191,7 @@ article {
 
 .post-profils{
     font-style: italic;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -206,11 +200,16 @@ article {
 }
 
 .Phrase-temoignages{
-    font-size: 0.9rem;
+    text-align: center;
 }
 
 .Section-temoignages{
     columns: 1;
+}
+
+.Container-Case-Temoignage {
+  border: 1px solid black;
+  padding: 5px;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
@@ -292,6 +291,26 @@ nav {
   font-size: 0.8rem;
 }
 
+.scroll-top {
+	display: block;
+	float: right;
+  background-color: transparent;
+  border: 1px solid #F76C6C;
+	border-radius: 3px;
+	color: #F76C6C;
+	padding: 15px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: 1;
+	z-index: 99999;
+	font-size: 10px;
+}
+
+.h2-temoignage {
+  display: none;
+}
+
 .img-all{
   max-width: 100%;
 }
@@ -336,13 +355,19 @@ nav {
     background-color: white;
   }  
 
+  .scroll-top {
+    display: none;
+  }
+
+  #bouton-temoignages {
+    display: none;
+  }
+
   .img-all{
     box-sizing: border-box;
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
   .Container-All{
@@ -393,13 +418,19 @@ nav {
   background-color: white;
   }
 
+  .scroll-top {
+    display: none;
+  }
+
+  #bouton-temoignages {
+    display: none;
+  }
+
   .img-all{
     box-sizing: border-box;
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
   .Container-All{
