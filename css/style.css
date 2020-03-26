@@ -12,6 +12,7 @@
 body, p, ul, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
+    
 }
 body {
   margin-top: 1rem;
@@ -21,7 +22,15 @@ body {
   box-sizing: border-box;
   min-width: 66%;
   padding: 1rem;
+  margin-top: 40px;
 }
+
+.Section-Middle-World {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 40px;
+}
+
 .Section-temoignages{
     border-left: 1px solid lightgray;
     border-radius: 1px;
@@ -61,6 +70,15 @@ article {
   color: black;
 }
 
+nav {
+  border-top: 1px groove;
+  border-bottom: solid 2px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 99;
+}
+
 .site-title {
   font-size: 4rem;
   font-family: "Chomsky", serif;
@@ -73,20 +91,32 @@ article {
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
+
+.cat {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  align-self: center;
+  border: 1px solid #c83c53;
+  border-left: 37px solid #c83c53;
+  background-color: rgb(255, 255, 255);
+  color: #c83c53;
+  padding: 10px 20px;
+}
+
+.bouton, .bouton-temoignages {
+  margin-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------------------------------------------------*/
 .title-Middle{
     text-align: left;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem;
-    margin-bottom: 1rem;
     font-family: 'Roboto',sans-serif;
-}
-article:not(:first-of-type) .title-Middle {
-  border-top: 1px solid lightgray;
 }
 
 .articleCadre {
@@ -98,21 +128,20 @@ article:not(:first-of-type) .title-Middle {
     font-family: 'Crimson Text', serif;
     text-align: justify;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .read-more-trigger{
-  display: inline-block;
+  display: block;
   background-color: #F76C6C;
   color: white;
-  height: 40px;
-  width: 22%;
+  height: auto;
+  max-width: 30%;
   font-weight: bold;
-  font-size: 1.5rem;
-  padding: 5px;
-  margin-left: 70%;
+  padding: 0.5rem;
+  margin-left: 60%;
   margin-bottom: 30px;
   text-align: center;
-  position: relative;
 }
 
 .read-more-trigger:hover{
@@ -120,10 +149,6 @@ article:not(:first-of-type) .title-Middle {
   background-color: white;
   border: 1px solid #F76C6C;
   color: #F76C6C;
-}
-
- .articleCadre {
-  border: 1px solid black;
 }
 
 .read-more-state {
@@ -140,21 +165,19 @@ article:not(:first-of-type) .title-Middle {
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
-  max-height: 999em;
 }
 
 .read-more-state ~ .read-more-trigger:before {
   content: 'Lire la suite';
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 1.3rem;
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Réduire';
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 1.3rem;
 }
-
 
 /* ------------------------------------------------------------------------------------------------------*/
 /* ---------------------------------- Partie Section-Temoignages ----------------------------------------*/
@@ -168,6 +191,7 @@ article:not(:first-of-type) .title-Middle {
     text-transform: uppercase;
     margin-bottom: 2rem;
     column-span: all;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logoLinkedin, .logoLinkedin:link:active, .logoLinkedin:visited:active{
@@ -176,7 +200,7 @@ article:not(:first-of-type) .title-Middle {
 
 .post-profils{
     font-style: italic;
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -185,11 +209,16 @@ article:not(:first-of-type) .title-Middle {
 }
 
 .Phrase-temoignages{
-    font-size: 0.9rem;
+    text-align: center;
 }
 
 .Section-temoignages{
     columns: 1;
+}
+
+.Container-Case-Temoignage {
+  border: 1px solid black;
+  padding: 5px;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
@@ -208,36 +237,41 @@ article:not(:first-of-type) .title-Middle {
 }
 
 #Logo-Wild{
-    width: 10vw;
+    width: 30vw;
     height: auto;
+    margin-right: 10%;
+    justify-content: top;
 }
  
 .Liens-Externe {
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  justify-content: top;
+}
+.Liens-Externe a {
   text-decoration: none;
   color: white;
   padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  justify-content: center;
 }
+     
 
-.link-footer{
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-}
-
-.link-footer a:hover {
+.Liens-Externe  a:hover {
   text-decoration: underline;
   color: white;
 }
 
+.container-footer h3{
+  font-size: 2rem;
+}
+
+
 .Nous-Contacter{
-    margin-left: 10%;
+    margin-left: 0%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
 }
 
 .Nous-Contacter a {
@@ -267,6 +301,26 @@ article:not(:first-of-type) .title-Middle {
   display: none;
 }
 
+.scroll-top {
+	display: block;
+	float: right;
+  background-color: transparent;
+  border: 1px solid #F76C6C;
+	border-radius: 3px;
+	color: #F76C6C;
+	padding: 15px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: 1;
+	z-index: 99999;
+	font-size: 10px;
+}
+
+.h2-temoignage {
+  display: none;
+}
+
 .img-all{
   max-width: 100%;
 }
@@ -284,10 +338,20 @@ article:not(:first-of-type) .title-Middle {
 .Nom-temoignages ,.post-profils, p{
   text-align: center;
 }
-
+.container-footer h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.container-footer a{
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
 #Logo-Wild{
-  width: 25vh;
+  width: 20vh;
   height: auto;
+  text-align: center;
+  margin-right: 0%;
 }
 
 .Lien-and-Contact{
@@ -298,6 +362,7 @@ article:not(:first-of-type) .title-Middle {
 
 .site-title{
   text-align: center;
+  margin-right: 0%;
 }
 
 .navigation-ulist{
@@ -393,13 +458,19 @@ article:not(:first-of-type) .title-Middle {
     background-color: white;
   }  
 
+  .scroll-top {
+    display: none;
+  }
+
+  #bouton-temoignages {
+    display: none;
+  }
+
   .img-all{
     box-sizing: border-box;
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
   .Container-All{
@@ -417,10 +488,14 @@ article:not(:first-of-type) .title-Middle {
   border-left: none;
   padding: 1rem;
 }
-
+.container-footer h3{
+  font-size: 1.5rem;
+}
 #Logo-Wild{
   width: 20vh;
   height: auto;
+  align-items: baseline;
+  
 }
 
 .Lien-and-Contact{
@@ -428,6 +503,15 @@ article:not(:first-of-type) .title-Middle {
   flex-direction: row;
   justify-content: center;
 }
+
+#temoignages-section {
+  display: none;
+}
+
+.Section-temoignages {
+  display: none;
+}
+
 }
 
 @media screen and (min-width: 769px) {
@@ -444,13 +528,19 @@ article:not(:first-of-type) .title-Middle {
   background-color: white;
   }
 
+  .scroll-top {
+    display: none;
+  }
+
+  #bouton-temoignages {
+    display: none;
+  }
+
   .img-all{
     box-sizing: border-box;
     max-width: 100%;
     text-align: center;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
   .Container-All{
@@ -469,9 +559,10 @@ article:not(:first-of-type) .title-Middle {
   padding: 1rem;
 }
 #Logo-Wild{
-  width: 30vh;
+  width: 20vh;
   height: auto;
   align-items: baseline;
+ 
 }
 
 .Lien-and-Contact{
@@ -479,4 +570,13 @@ article:not(:first-of-type) .title-Middle {
   flex-direction: row;
   justify-content: center;
 }
+
+#temoignages-section {
+  display: none;
+}
+
+.Section-temoignages {
+  display: none;
+}
+
 }
