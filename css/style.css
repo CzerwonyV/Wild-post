@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Chomsky";
-  src: url("fonts/Chomsky.otf") format("otf"),
-       url("fonts/Chomsky.woff") format("woff");
+  src: url("../fonts/Chomsky.otf") format("otf"),
+       url("../fonts/Chomsky.woff") format("woff");
 }
 
 
@@ -230,7 +230,7 @@ nav {
     bottom: 0;
     margin: 0 auto;
     color: white;
-    width: 100%;
+   
     height: auto;
     display: flex;
     flex-direction: row;
