@@ -463,6 +463,13 @@ body {
   height: 3vh;
   width: auto;
 }
+
+.Section-Middle {
+  box-sizing: border-box;
+  min-width: 66%;
+  padding: 1rem;
+  margin-top: 0;
+}
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
