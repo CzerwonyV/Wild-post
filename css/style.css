@@ -387,12 +387,13 @@ nav {
   margin: 0;
 }
 
-.navigation-link{
-  color: white;
+.navigation-linkMobile{
+  color: black;
   text-decoration: none;
-  margin-bottom: 1%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.4rem;
+  margin-bottom: 2vh;
+  border-bottom: solid 2px;
 }
 
 .HearderMobileContent{
@@ -416,10 +417,12 @@ nav {
 }
 
 .content-out{
-  background-color: #F99797;
+  color: black;
   position: absolute;
   width: 100%;
   text-align: center;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
 }
 
 .navigation-ulistMobile{
@@ -427,10 +430,6 @@ nav {
   padding-left: 2vh;
   display: flex;
   flex-direction: column;
-}
-
-.navigation-link{
-  margin-bottom: 2vh;
 }
 
 #headText{
@@ -454,9 +453,9 @@ nav {
 }
 
 nav {
-  background-color: #F99797;
   border-top: 0;
   border-bottom: 0;
+  color: black;
 }
 
 body {
