@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Chomsky";
-  src: url("fonts/Chomsky.otf") format("otf"),
-       url("fonts/Chomsky.woff") format("woff");
+  src: url("../fonts/Chomsky.otf") format("otf"),
+       url("../fonts/Chomsky.woff") format("woff");
 }
 
 
@@ -42,6 +42,10 @@ article {
   margin-bottom: 2rem;
 }
 
+#logoWildHead{
+  height: 2vh;
+  width: auto;
+}
 /* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ Partie Header ---------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
@@ -91,6 +95,7 @@ nav {
     max-width: 100%;
     text-align: center;
     float: left;
+    margin-bottom: 15px;
 }
 
 .cat {
@@ -129,6 +134,7 @@ nav {
     text-align: justify;
     padding: 10px;
     margin: 0 auto;
+    text-indent: 30px;
 }
 
 .read-more-trigger{
@@ -162,9 +168,10 @@ nav {
   transition: .25s ease;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+.read-more-state:checked ~ .read-more-target {
   opacity: 1;
-  font-size: inherit;
+  max-height: initial;
+  font-size: 1.3rem;
 }
 
 .read-more-state ~ .read-more-trigger:before {
@@ -230,7 +237,7 @@ nav {
     bottom: 0;
     margin: 0 auto;
     color: white;
-    width: 100%;
+   
     height: auto;
     display: flex;
     flex-direction: row;
@@ -340,6 +347,10 @@ nav {
   }
 
   .Nom-temoignages ,.post-profils, p {
+    text-align: justify;
+  }
+
+  .p-date {
     text-align: center;
   }
 
@@ -383,12 +394,13 @@ nav {
   margin: 0;
 }
 
-.navigation-link{
-  color: white;
+.navigation-linkMobile{
+  color: black;
   text-decoration: none;
-  margin-bottom: 1%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.4rem;
+  margin-bottom: 2vh;
+  border-bottom: solid 2px;
 }
 
 .HearderMobileContent{
@@ -411,11 +423,33 @@ nav {
   display: none;
 }
 
+.scroll-top {
+	display: block;
+	float: right;
+  background-color: transparent;
+  border: 1px solid #3b424e;
+	border-radius: 3px;
+	color: #3b424e;
+	padding: 15px;
+	position: fixed;
+  margin-left: 60%;
+	opacity: 1;
+	z-index: 99999;
+  font-size: 15px;
+}
+
+
+.h2-temoignage {
+  display: none;
+}
+
 .content-out{
-  background-color: #F99797;
+  color: black;
   position: absolute;
   width: 100%;
   text-align: center;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
 }
 
 .navigation-ulistMobile{
@@ -425,23 +459,13 @@ nav {
   flex-direction: column;
 }
 
-.navigation-link{
-  margin-bottom: 2vh;
-}
-
-.headText{
+#headText{
   font-size: 0.8rem;
 }
 
-#Date{
-  text-align: center;
+.dateEdition{
   margin: 0;
   border-bottom: solid 2px;
-
-}
-
-.date{
-  background-color: #F99797;
 }
 
 .HearderMobile{
@@ -454,6 +478,42 @@ nav {
   font-size: 2rem;
   font-family: "Chomsky", serif;
 }
+
+nav {
+  border-top: 0;
+  border-bottom: 0;
+  color: black;
+}
+
+body {
+  margin-top: 0;
+}
+
+#logoWildHead{
+  height: 3vh;
+  width: auto;
+}
+
+.Section-Middle {
+  box-sizing: border-box;
+  min-width: 66%;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.Container-All{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  padding: 1rem;
+}
+
+.Section-temoignages {
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -461,7 +521,7 @@ nav {
   .block-temoignage {
     display: none;
   }
-  
+
   .HearderMobile{
     display: none;
   }
@@ -472,13 +532,14 @@ nav {
     position: sticky;
     top: 0px;
     background-color: white;
-  }  
-
-  .scroll-top {
-    display: none;
   }
 
-  #bouton-temoignages {
+  #logoWildHead{
+    height: 2vh;
+    width: auto;
+  }
+
+  .scroll-top {
     display: none;
   }
 
@@ -491,7 +552,9 @@ nav {
 
   .Container-All {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 1rem;
   }
 
@@ -521,13 +584,10 @@ nav {
     justify-content: center;
   }
 
-  #temoignages-section {
-    display: none;
-  }
 
-  .Section-temoignages {
-    display: none;
-  }
+.Section-temoignages {
+  display: block;
+}
 
 }
 
@@ -592,3 +652,4 @@ nav {
     display: none;
   }
 }
+
