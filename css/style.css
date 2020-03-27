@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Chomsky";
-  src: url("fonts/Chomsky.otf") format("otf"),
-       url("fonts/Chomsky.woff") format("woff");
+  src: url("../fonts/Chomsky.otf") format("otf"),
+       url("../fonts/Chomsky.woff") format("woff");
 }
 
 
