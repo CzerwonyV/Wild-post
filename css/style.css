@@ -350,6 +350,10 @@ nav {
     text-align: justify;
   }
 
+  .p-date {
+    text-align: center;
+  }
+
   .container-footer h3 {
     font-size: 2rem;
     text-align: center;
