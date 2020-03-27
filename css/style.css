@@ -230,7 +230,7 @@ nav {
     bottom: 0;
     margin: 0 auto;
     color: white;
-    width: 100%;
+   
     height: auto;
     display: flex;
     flex-direction: row;
@@ -429,19 +429,13 @@ nav {
   margin-bottom: 2vh;
 }
 
-.headText{
+#headText{
   font-size: 0.8rem;
 }
 
-#Date{
-  text-align: center;
+.dateEdition{
   margin: 0;
   border-bottom: solid 2px;
-
-}
-
-.date{
-  background-color: #F99797;
 }
 
 .HearderMobile{
@@ -453,6 +447,21 @@ nav {
   margin: 0;
   font-size: 2rem;
   font-family: "Chomsky", serif;
+}
+
+nav {
+  background-color: #F99797;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+body {
+  margin-top: 0;
+}
+
+#logoWildHead{
+  height: 3vh;
+  width: auto;
 }
 }
 
