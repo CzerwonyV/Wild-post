@@ -91,6 +91,7 @@ nav {
     max-width: 100%;
     text-align: center;
     float: left;
+    margin-bottom: 15px;
 }
 
 .cat {
@@ -129,6 +130,7 @@ nav {
     text-align: justify;
     padding: 10px;
     margin: 0 auto;
+    text-indent: 30px;
 }
 
 .read-more-trigger{
@@ -162,9 +164,10 @@ nav {
   transition: .25s ease;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+.read-more-state:checked ~ .read-more-target {
   opacity: 1;
-  font-size: inherit;
+  max-height: initial;
+  font-size: 1.3rem;
 }
 
 .read-more-state ~ .read-more-trigger:before {
@@ -340,7 +343,7 @@ nav {
   }
 
   .Nom-temoignages ,.post-profils, p {
-    text-align: center;
+    text-align: justify;
   }
 
   .container-footer h3 {
@@ -411,6 +414,26 @@ nav {
   display: none;
 }
 
+.scroll-top {
+	display: block;
+	float: right;
+  background-color: transparent;
+  border: 1px solid #3b424e;
+	border-radius: 3px;
+	color: #3b424e;
+	padding: 15px;
+	position: fixed;
+  margin-left: 60%;
+	opacity: 1;
+	z-index: 99999;
+  font-size: 15px;
+}
+
+
+.h2-temoignage {
+  display: none;
+}
+
 .content-out{
   background-color: #F99797;
   position: absolute;
@@ -470,6 +493,20 @@ body {
   padding: 1rem;
   margin-top: 0;
 }
+
+.Container-All{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  padding: 1rem;
+}
+
+.Section-temoignages {
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -494,10 +531,6 @@ body {
     display: none;
   }
 
-  #bouton-temoignages {
-    display: none;
-  }
-
   .img-all {
     box-sizing: border-box;
     max-width: 100%;
@@ -507,7 +540,9 @@ body {
 
   .Container-All {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 1rem;
   }
 
@@ -537,13 +572,10 @@ body {
     justify-content: center;
   }
 
-  #temoignages-section {
-    display: none;
-  }
 
-  .Section-temoignages {
-    display: none;
-  }
+.Section-temoignages {
+  display: block;
+}
 
 }
 
@@ -608,3 +640,4 @@ body {
     display: none;
   }
 }
+
