@@ -91,6 +91,7 @@ nav {
     max-width: 100%;
     text-align: center;
     float: left;
+    margin-bottom: 15px;
 }
 
 .cat {
@@ -129,6 +130,7 @@ nav {
     text-align: justify;
     padding: 10px;
     margin: 0 auto;
+    text-indent: 30px;
 }
 
 .read-more-trigger{
@@ -162,9 +164,10 @@ nav {
   transition: .25s ease;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+.read-more-state:checked ~ .read-more-target {
   opacity: 1;
-  font-size: inherit;
+  max-height: initial;
+  font-size: 1.3rem;
 }
 
 .read-more-state ~ .read-more-trigger:before {
